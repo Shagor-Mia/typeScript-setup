@@ -14,7 +14,7 @@ const dbConnection = async (): Promise<void> => {
     await mongoose.connect(mongoUri);
     console.log("✅ Connected to database!");
   } catch (error) {
-    console.error("❌ Error connecting to the database:", error);
+    console.error("❌ Error connecting to the database: ", error);
   }
 };
 
